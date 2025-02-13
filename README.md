@@ -12,3 +12,5 @@ Esta es una extensión para Microsoft Edge que proporciona un cronómetro popup 
 
 2. **Uso**:
     - Abre la extensión y utiliza los botones para controlar el cronómetro.
+
+ ![Captura de Pantalla](https://raw.githubusercontent.com/danraxai/cronometro-extension/refs/heads/main/cronometroCapture.png)

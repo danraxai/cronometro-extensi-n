@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cronómetro</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <style>
+    #cronometro {
+      background-color: #2c3e50;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid #ecf0f1;
+      width: 150px;  /* Reduce overall width */
+    }
+
+    #tiempo {
+      font-size: 1.5em;  /* Smaller font size */
+      margin-bottom: 10px;
+      color: #ecf0f1;
+    }
+
+    .btn-icon {
+      margin: 3px;
+      padding: 5px;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      font-size: 1em;
+      color: #ecf0f1;  /* White icons */
+      border: 1px solid #ecf0f1;  /* Border matches background color */
+      background: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn-play, .btn-pause, .btn-stop {
+      color: #ecf0f1;  /* White icons */
+      border-color: #ecf0f1;
+    }
+
+    .btn-play:hover {
+      border-color: #28a745;
+      color: #28a745;
+    }
+
+    .btn-pause:hover {
+      border-color: #ffc107;
+      color: #ffc107;
+    }
+
+    .btn-stop:hover {
+      border-color: #dc3545;
+      color: #dc3545;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="cronometro">
+    <span id="tiempo">00:00:00</span>
+    <div class="button-container">
+      <button id="iniciar" class="btn-icon btn-play"><i class="fas fa-play"></i></button>
+      <button id="pausar" class="btn-icon btn-pause"><i class="fas fa-pause"></i></button>
+      <button id="parar" class="btn-icon btn-stop"><i class="fas fa-stop"></i></button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
